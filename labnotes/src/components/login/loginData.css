@@ -1,0 +1,99 @@
+.imgLogo{
+    width: 180px;
+    border-radius: 12px;
+}
+
+.data{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 0px;
+    width: 375px;
+    height: 615px;
+    border-radius: 12px;
+    color: #DADADA;
+    background-color: #342929;
+
+}
+
+.sesion{
+    display: flex;
+    font-size: 35px;
+    margin-top: 20px;
+    font-family: Roboto Condensed;
+}
+
+.google{
+    width: 50px;
+    height: 50px;
+}
+
+.buttonGoogle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    color: #FFFF;
+    font-family: Roboto Condensed;
+    background-color: #443a3a;
+    border-radius: 47px;
+    border: 2px solid #4285F4;
+    transition-duration: 0.4s;
+}
+
+.buttonGoogle:hover{
+    background-color: #0d2a5a;
+    color: #FFFF; 
+    box-shadow: 0 5px 5px 0 rgba(155, 153, 153, 0.24),0 5px 20px 0 rgba(160, 160, 160, 0.19);
+}
+
+.buttonLogin{
+    display: flex;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    background-color: #4285F4;
+    color: #FFFF;
+    border-radius: 19px;
+    border: 2px solid #4285F4;
+    width: 82px;
+    transition-duration: 0.4s;
+}
+
+.buttonLogin:hover{
+    background-color: #0d2a5a;
+    color: #FFFF; 
+}
+
+.inputMail{
+    display: flex;
+    width: 262px;
+    height: 32px;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    color:#FFFF;
+    background-color: #342929;
+    border: 3px solid #717171;
+}
+
+.inputMail:hover{
+    border: 3px solid #4285F4;
+    transition-duration: 0.4s;
+}
+
+.inputPassword{
+    display: flex;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    color:#FFFF;
+    background-color: #342929;
+    border: 3px solid #717171;
+    width: 262px;
+    height: 32px;
+}
+
+.inputPassword:hover{
+    border: 3px solid #4285F4;
+    transition-duration: 0.4s;
+}

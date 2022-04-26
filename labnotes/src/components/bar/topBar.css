@@ -1,23 +1,8 @@
-.buttonAddNote{
-    width: 160px;
-    height: 46px;
-    background-color: rgb(206, 206, 206);
-    color: #FFFF;
-    font-family: roboto;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 18px;
-}
-
-.imgAddNote{
-    width: 30px;
-    height: 35px;
-}
-
 .topBar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 75px;
     border: solid 5px;
     border-color: #717171;
@@ -26,11 +11,72 @@
 .userTemplate{
     display: flex;
     flex-direction: row;
-    width: 200px;
+    width: 350px;
     height: 50px;
     justify-content: flex-start;
     align-items: center;
     border:solid;
     border-color: #717171;
     color: #FFFF;
+    font-size: 30px;
+}
+
+.nameTemplate{
+    width: 250px;
+    height: 36px;
+}
+
+.addNoteLabel{
+    width: 225px;
+    height: 36px;
+    background-color: black;
+    color: #FFFF;
+    font-family: roboto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.buttonAddNote{
+    width: 80px;
+    height: 75px;
+    background-color: rgb(220 220 220);
+    color: #FFFF;
+    font-family: roboto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 18px;
+    border: solid 3px;
+    border-color: #717171;
+    transition-duration: 0.4s;
+}
+
+.buttonAddNote:hover{
+    background-color: #4d8df5;
+    color: #FFFF; 
+    box-shadow: 0 5px 5px 0 rgba(155, 153, 153, 0.24),0 5px 20px 0 rgba(160, 160, 160, 0.19);
+}
+
+.imgAddNote{
+    width: 65px;
+    height: 70px;
+}
+
+.buttonLogOut{
+    width: 105px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-family: roboto;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 18px;
+    border: solid 3px;
+    border-color: #717171;
+    transition-duration: 0.4s;
+}
+
+.buttonLogOut:hover{
+    background-color: #4d8df5;
+    color: #FFFF; 
+    box-shadow: 0 5px 5px 0 rgba(155, 153, 153, 0.24),0 5px 20px 0 rgba(160, 160, 160, 0.19);
 }

@@ -52,3 +52,10 @@
     font-family: Roboto Condensed;
     font-size: 20px;
 }
+
+.areaEditButton{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 13px;
+  }

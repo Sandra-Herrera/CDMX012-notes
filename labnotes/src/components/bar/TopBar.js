@@ -1,24 +1,25 @@
 import imgAddNote from "../../img/imgAddNote.png";
+import sandy from "../../img/sandy.jpg";
 import "./topBar.css";
 import { useNavigate } from "react-router-dom";
 
-export default function TopBar(){
+export default function TopBar() {
     const navigate = useNavigate();
-    const logOut = ()=>{
+    const logOut = () => {
         navigate('/');
     }
-    return(
+    return (
         <div>
-            <div class="topBar">
-                <section class="userTemplate">
-                    <img alt="imgProf" class="profilePic" />
-                    <label class="nameTemplate">Karina Hernández</label>
+            <div className="topBar">
+                <section className="userTemplate">
+                    <img alt="imgProf" className="profilePic" src={sandy} />
+                    <label className="nameTemplate">Sandra Herrera</label>
                 </section>
-                <label class="addNoteLabel">Agregar una nota</label>
-                <button class="buttonAddNote">
-                    <img alt="imgNote" class="imgAddNote" src={imgAddNote} />
-                </button>
-                <button class="buttonLogOut" onClick={logOut}>
+                    <label className="addNoteLabel">Agregar una nota</label>
+                    <button className="buttonAddNote">
+                        <img alt="imgNote" className="imgAddNote" src={imgAddNote} />
+                    </button>
+                <button className="buttonLogOut" onClick={logOut}>
                     Cerrar sesión
                 </button>
             </div>

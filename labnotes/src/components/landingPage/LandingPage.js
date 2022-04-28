@@ -4,7 +4,7 @@ import "./landingPage.css";
 
 export default function LandingPage() {
     return (
-        <div class="landingContainer">
+        <div className="landingContainer">
             <TopBar />
             <CardsNotes />
         </div>

@@ -21,13 +21,13 @@ export function Popup(props) {
     const saveNote = async (e) => {
         e.preventDefault();
         let docRef;
-        if(values.noteId){
-            const upDoc = doc(db, "note", "noteId");
-            docRef = await updateDoc(upDoc, values);
-        }else{
+        // if(values.noteId){
+        //     const upDoc = doc(db, "note", "noteId");
+        //     docRef = await updateDoc(upDoc, values);
+        // }else{
             docRef = await addDoc(collection(db, "note"),values);
             setValues({...values, noteId:docRef.id})
-        }
+        //}
         console.log(docRef.id);     
     }
 
@@ -35,11 +35,11 @@ export function Popup(props) {
         props.visible ?
         <>
             {/* <!-- The Modal --> */}
-            <div id="myModal" class="modal" >
+            <div id="myModal" className="modal" >
 
                 {/* <!-- Modal content --> */}
-                <div class="modal-content">
-                    <span class="close" onClick={props.onClickCloseModal}>&times;</span>
+                <div className="modal-content">
+                    <span className="close" onClick={props.onClickCloseModal}>&times;</span>
                     <input className="titleModal" id="title" onChange={areaEditChange} placeholder="Título" ></input>
                     <textarea className="writeNoteModal" id="noteText" onChange={areaEditChange} placeholder="Escribe una nota..."></textarea>
                     <section className="areaSaveButton">

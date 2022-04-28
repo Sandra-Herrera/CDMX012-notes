@@ -12,7 +12,7 @@
     height: 615px;
     border-radius: 12px;
     color: #DADADA;
-    background-color: #342929;
+    background-color: #563f3f;
 
 }
 
@@ -73,7 +73,7 @@
     font-family: Roboto Condensed;
     font-size: 20px;
     color:#FFFF;
-    background-color: #342929;
+    background-color: #ececec;
     border: 3px solid #717171;
 }
 
@@ -87,7 +87,7 @@
     font-family: Roboto Condensed;
     font-size: 20px;
     color:#FFFF;
-    background-color: #342929;
+    background-color: #ececec;
     border: 3px solid #717171;
     width: 262px;
     height: 32px;

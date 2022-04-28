@@ -5,7 +5,7 @@ import LoginData from "./LoginData";
 
 export default function Login(){
     return (
-    <div class="loginContainer">
+    <div className="loginContainer">
         <ImageLogin/>
         <LoginData/>
     </div>

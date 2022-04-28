@@ -17,24 +17,24 @@ export default function LoginData() {
 
     return (
         <div>
-            <div class="data">
+            <div className="data">
                 <section>
-                    <img alt="imagen logo" class="imgLogo" src={imgCreateNotes}/>
+                    <img alt="imagen logo" className="imgLogo" src={imgCreateNotes}/>
                 </section>
-                <section class="sesion">
+                <section className="sesion">
                     Iniciar sesión
                 </section>
                 <br></br>
-                <button class="buttonGoogle" onClick={SignInWithFirebase} >
-                    <img alt="imagen Google" class="google" src={imgGoogle} />
+                <button className="buttonGoogle" onClick={SignInWithFirebase} >
+                    <img alt="imagen Google" className="google" src={imgGoogle} />
                     Acceder con Google
                 </button>
                 <br></br>
-                <input class="inputMail" placeholder="Ingresa tu correo" />
+                <input className="inputMail" placeholder="Ingresa tu correo" />
                 <br></br>
-                <input class="inputPassword" placeholder="Ingresa tu contraseña" />
+                <input className="inputPassword" placeholder="Ingresa tu contraseña" />
                 <br></br>
-                <button class="buttonLogin">Ingresar</button>
+                <button className="buttonLogin">Ingresar</button>
             </div>
         </div>
     );

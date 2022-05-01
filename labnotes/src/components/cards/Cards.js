@@ -5,30 +5,33 @@ import imgView from "../../img/imgView.png";
 import { Popup } from "../popup/Popup";
 import { useState } from "react";
 import { db } from "../firebase/Firebase";
-import { collection, getDocs } from "firebase/firestore";
+import { doc, collection, getDocs, deleteDoc } from "firebase/firestore";
 import { useEffect } from "react";
 
 export default function CardsNotes(){
     
     const [allNotes, setAllNotes] = useState([]);
-    useEffect(()=>{
-        const getNotes = async ()=>{
-            const querySnapshot = await getDocs(collection(db, "note"));
-            let result=[]; 
-            querySnapshot.forEach((doc) => {
-                let infoNote = doc.data();
-                infoNote["id"] = doc.id;
-                result.push(infoNote);
-            });
-            setAllNotes(result);
-        };
+    useEffect(()=>{  
         getNotes();
     },[]);
-
+    const getNotes = async ()=>{
+        const querySnapshot = await getDocs(collection(db, "note"));
+        let result=[]; 
+        querySnapshot.forEach((doc) => {
+            let infoNote = doc.data();
+            infoNote["id"] = doc.id;
+            result.push(infoNote);
+        });
+        setAllNotes(result);
+    };
 
     const [visibility, setVisibility] = useState(false);
     const onEdit = ()=> setVisibility(true);
     const onClickHide = ()=> setVisibility(false);
+    const onDelete = note => async () => {
+        await deleteDoc(doc(db, "note", note.id));
+        getNotes();
+    }
     return (
         <>
             <div className="notesArea">
@@ -39,7 +42,7 @@ export default function CardsNotes(){
                                 <input className="titleNote" placeholder="Título" value={note.title} disabled></input>
                                 <textarea className="textNote" placeholder="Escribe una nota..." value={note.noteText} disabled></textarea>
                                 <section className="areaButtons">
-                                    <button className="buttonDelete">
+                                    <button className="buttonDelete" onClick={onDelete(note)}>
                                         <img alt="imgDel" className="deleteImg" src={imgDelete}/>
                                     </button>
                                     <button className="buttonViewNote">

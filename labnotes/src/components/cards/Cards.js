@@ -1,4 +1,5 @@
 import "./cards.css";
+import imgAddNote from "../../img/imgAddNote.png";
 import imgEdit from "../../img/imgEdit.png";
 import imgDelete from "../../img/imgDelete.png";
 import imgView from "../../img/imgView.png";
@@ -24,16 +25,31 @@ export default function CardsNotes(){
         });
         setAllNotes(result);
     };
+    
 
-    const [visibility, setVisibility] = useState(false);
-    const onEdit = ()=> setVisibility(true);
-    const onClickHide = ()=> setVisibility(false);
+    const [objPopup, setPopup] = useState({visibility:false});
+    const onEdit = note => ()=> {
+        setPopup({visibility:true, popupNote:note});
+    }
+    const onAdd  = () =>{
+        setPopup({visibility:true});
+    }
+    const onClickHide = ()=> {
+        setPopup({visibility:false});
+        getNotes();
+    }
     const onDelete = note => async () => {
         await deleteDoc(doc(db, "note", note.id));
         getNotes();
     }
     return (
         <>
+            <div className="addBtnContainer">
+                <label className="addNoteLabel">Agregar una nota</label>
+                <button className="buttonAddNote" onClick={onAdd}>
+                    <img alt="imgNote" className="imgAddNote" src={imgAddNote} />
+                </button>
+            </div>
             <div className="notesArea">
                 {
                     allNotes.map(note=>{
@@ -48,7 +64,7 @@ export default function CardsNotes(){
                                     <button className="buttonViewNote">
                                         <img alt="imgVi" className="ViewNoteImg" src={imgView}/>
                                     </button>
-                                    <button className="buttonEdit" onClick={onEdit}>
+                                    <button className="buttonEdit" onClick={onEdit(note)}>
                                         <img alt="imgEd" className="editionImg" src={imgEdit} />
                                     </button>
                                 </section>
@@ -65,7 +81,7 @@ export default function CardsNotes(){
                 <section class="note">Hello7</section>
                 <section class="note">Hello8</section>  */}
             </div>
-            <Popup onClickCloseModal={onClickHide} visible={visibility}/>
+            <Popup onClickCloseModal={onClickHide} visible={objPopup.visibility} attrNote={objPopup.popupNote}/>
         </>
     );
 };

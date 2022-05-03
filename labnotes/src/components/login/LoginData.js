@@ -3,14 +3,19 @@ import imgGoogle from "../../img/imgGoogle.png";
 import "./loginData.css"
 import {app, provider, signIn, auth} from "../firebase/Firebase";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import LoginContext from "../../context/LoginContext";
 
 
 export default function LoginData() {
+    const { authenticationDone} = useContext(LoginContext);
     const navigate = useNavigate();
 
     const SignInWithFirebase = ()=>{
         signIn(auth, provider)
         .then((loginDone)=>{
+            debugger;
+            authenticationDone(loginDone);
             navigate('/landing');
         });
     }
@@ -25,16 +30,18 @@ export default function LoginData() {
                     Iniciar sesión
                 </section>
                 <br></br>
+                <br></br>
+                <br></br>
                 <button className="buttonGoogle" onClick={SignInWithFirebase} >
                     <img alt="imagen Google" className="google" src={imgGoogle} />
-                    Acceder con Google
                 </button>
-                <br></br>
+                <label className="labelGoogle">Accede con Google</label>
+                {/* <br></br>
                 <input className="inputMail" placeholder="Ingresa tu correo" />
                 <br></br>
                 <input className="inputPassword" placeholder="Ingresa tu contraseña" />
                 <br></br>
-                <button className="buttonLogin">Ingresar</button>
+                <button className="buttonLogin">Ingresar</button> */}
             </div>
         </div>
     );

@@ -24,19 +24,16 @@
 }
 
 .google{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 .buttonGoogle{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 50px;
-    font-size: 25px;
-    color: #FFFF;
-    font-family: Roboto Condensed;
+    width: 100px;
+    height: 100px;
     background-color: #443a3a;
     border-radius: 47px;
     border: 2px solid #4285F4;
@@ -45,11 +42,21 @@
 
 .buttonGoogle:hover{
     background-color: #0d2a5a;
-    color: #FFFF; 
     box-shadow: 0 5px 5px 0 rgba(155, 153, 153, 0.24),0 5px 20px 0 rgba(160, 160, 160, 0.19);
 }
 
-.buttonLogin{
+.labelGoogle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    color: #FFFF;
+    font-family: Roboto Condensed;
+}
+
+/* .buttonLogin{
     display: flex;
     font-family: Roboto Condensed;
     font-size: 20px;
@@ -59,14 +66,14 @@
     border: 2px solid #4285F4;
     width: 82px;
     transition-duration: 0.4s;
-}
+} */
 
-.buttonLogin:hover{
+/* .buttonLogin:hover{
     background-color: #0d2a5a;
     color: #FFFF; 
-}
+} */
 
-.inputMail{
+/* .inputMail{
     display: flex;
     width: 262px;
     height: 32px;
@@ -96,4 +103,4 @@
 .inputPassword:hover{
     border: 3px solid #4285F4;
     transition-duration: 0.4s;
-}
+} */

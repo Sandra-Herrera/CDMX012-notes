@@ -13,7 +13,7 @@ export default function TopBar() {
             <div className="topBar">
                 <section className="userTemplate">
                     <img alt="imgProf" className="profilePic" src={sandy} />
-                    <label className="nameTemplate">Sandra Herrera</label>
+                    <label className="nameTemplate">Sandy Herrera</label>
                 </section>
                 <button className="buttonLogOut" onClick={logOut}>
                     Cerrar sesión

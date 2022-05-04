@@ -45,7 +45,7 @@ export default function CardsNotes(){
     return (
         <>
             <div className="addBtnContainer">
-                <label className="addNoteLabel">Agregar una nota</label>
+                <label className="addNoteLabel">Agrega una nota</label>
                 <button className="buttonAddNote" onClick={onAdd}>
                     <img alt="imgNote" className="imgAddNote" src={imgAddNote} />
                 </button>

@@ -17,8 +17,8 @@
     height: 50px;
     justify-content: flex-start;
     align-items: center;
-    border:solid;
-    border-color: #000000;
+    /* border:solid;
+    border-color: #000000; */
     color: #FFFF;
     font-size: 30px;
 }

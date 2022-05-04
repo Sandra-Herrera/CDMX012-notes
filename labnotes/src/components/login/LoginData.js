@@ -14,7 +14,6 @@ export default function LoginData() {
     const SignInWithFirebase = ()=>{
         signIn(auth, provider)
         .then((loginDone)=>{
-            debugger;
             authenticationDone(loginDone);
             navigate('/landing');
         });

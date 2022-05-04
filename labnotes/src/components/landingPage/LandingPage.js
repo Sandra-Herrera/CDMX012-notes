@@ -11,7 +11,7 @@ export default function LandingPage() {
     const navigate = useNavigate();
     useEffect(()=>{
         if(!authentication){
-            navigate('/');
+            //navigate('/');
         }
     },[]);
     

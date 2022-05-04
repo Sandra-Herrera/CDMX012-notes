@@ -21,8 +21,10 @@ export default function CardsNotes(){
         querySnapshot.forEach((doc) => {
             let infoNote = doc.data();
             infoNote["id"] = doc.id;
-            result.push(infoNote);
+            result.push(infoNote); 
         });
+        //Ordernamiento
+        result = result.sort((a, b) => new Date(b.date) - new Date(a.date));
         setAllNotes(result);
     };
     

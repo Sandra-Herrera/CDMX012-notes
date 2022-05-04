@@ -8,13 +8,15 @@ export function Popup(props) {
     const initialStateValues = {
         title: '',
         noteText:'',
+        date:'',
     };
 
     const [values, setValues] = useState(initialStateValues);
     
     const areaEditChange = e =>{
         const {id, value} = e.target;
-        const newValue = {...values, [id]: value};
+        let today = new Date().toISOString()
+        const newValue = {...values, [id]: value, "date":today};
         setValues(newValue);
     }
 

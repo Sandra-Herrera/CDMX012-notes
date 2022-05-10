@@ -1,5 +1,7 @@
 # Lab Notes
 
+Visita mi página [Create.Notes](https://sandra-herrera.github.io/CDMX012-notes/src/index.html)
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)

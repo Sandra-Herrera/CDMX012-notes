@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/CDMX012-notes/static/css/main.1ea6720b.css",
-    "main.js": "/CDMX012-notes/static/js/main.05679516.js",
-    "static/js/787.e2d466e0.chunk.js": "/CDMX012-notes/static/js/787.e2d466e0.chunk.js",
-    "static/media/imgLogin.PNG": "/CDMX012-notes/static/media/imgLogin.3d19aeef993393ee4e00.PNG",
-    "static/media/sandy.jpg": "/CDMX012-notes/static/media/sandy.bb374f38c47fb63e8ddc.jpg",
-    "static/media/imgGoogle.png": "/CDMX012-notes/static/media/imgGoogle.0b50af2fbb8c1e8ca23e.png",
-    "static/media/imgCreateNotes.PNG": "/CDMX012-notes/static/media/imgCreateNotes.fac9d4e2fbf6983e88ed.PNG",
-    "index.html": "/CDMX012-notes/index.html",
-    "main.1ea6720b.css.map": "/CDMX012-notes/static/css/main.1ea6720b.css.map",
-    "main.05679516.js.map": "/CDMX012-notes/static/js/main.05679516.js.map",
-    "787.e2d466e0.chunk.js.map": "/CDMX012-notes/static/js/787.e2d466e0.chunk.js.map"
+    "main.css": "/CDMX012-notes/labnotes/static/css/main.1ea6720b.css",
+    "main.js": "/CDMX012-notes/labnotes/static/js/main.7da2b847.js",
+    "static/js/787.e2d466e0.chunk.js": "/CDMX012-notes/labnotes/static/js/787.e2d466e0.chunk.js",
+    "static/media/imgLogin.PNG": "/CDMX012-notes/labnotes/static/media/imgLogin.3d19aeef993393ee4e00.PNG",
+    "static/media/sandy.jpg": "/CDMX012-notes/labnotes/static/media/sandy.bb374f38c47fb63e8ddc.jpg",
+    "static/media/imgGoogle.png": "/CDMX012-notes/labnotes/static/media/imgGoogle.0b50af2fbb8c1e8ca23e.png",
+    "static/media/imgCreateNotes.PNG": "/CDMX012-notes/labnotes/static/media/imgCreateNotes.fac9d4e2fbf6983e88ed.PNG",
+    "index.html": "/CDMX012-notes/labnotes/index.html",
+    "main.1ea6720b.css.map": "/CDMX012-notes/labnotes/static/css/main.1ea6720b.css.map",
+    "main.7da2b847.js.map": "/CDMX012-notes/labnotes/static/js/main.7da2b847.js.map",
+    "787.e2d466e0.chunk.js.map": "/CDMX012-notes/labnotes/static/js/787.e2d466e0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ea6720b.css",
-    "static/js/main.05679516.js"
+    "static/js/main.7da2b847.js"
   ]
 }

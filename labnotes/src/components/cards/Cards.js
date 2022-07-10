@@ -8,15 +8,18 @@ import { useState } from "react";
 import { db } from "../firebase/Firebase";
 import { doc, collection, getDocs, deleteDoc } from "firebase/firestore";
 import { useEffect } from "react";
+import { useContext } from "react";
+import LoginContext from "../../context/LoginContext";
 
 export default function CardsNotes(){
-    
+    const {authentication} = useContext(LoginContext);
     const [allNotes, setAllNotes] = useState([]);
     useEffect(()=>{  
         getNotes();
     },[]);
     const getNotes = async ()=>{
-        const querySnapshot = await getDocs(collection(db, "note"));
+        let collectionName = `${authentication.user.email}note`;
+        const querySnapshot = await getDocs(collection(db, collectionName));
         let result=[]; 
         querySnapshot.forEach((doc) => {
             let infoNote = doc.data();
@@ -41,7 +44,7 @@ export default function CardsNotes(){
         getNotes();
     }
     const onDelete = note => async () => {
-        await deleteDoc(doc(db, "note", note.id));
+        await deleteDoc(doc(db, `${authentication.user.email}note`, note.id));
         getNotes();
     }
     return (

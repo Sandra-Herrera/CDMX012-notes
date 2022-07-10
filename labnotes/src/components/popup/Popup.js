@@ -2,9 +2,11 @@ import './popup.css'
 import { useState } from "react";
 import {db} from '../firebase/Firebase'
 import { doc, addDoc, collection, updateDoc } from 'firebase/firestore';
+import { useContext } from "react";
+import LoginContext from "../../context/LoginContext";
 
 export function Popup(props) {
-
+    const {authentication} = useContext(LoginContext);
     const initialStateValues = {
         title: '',
         noteText:'',
@@ -24,12 +26,13 @@ export function Popup(props) {
     const saveNote = note => async (e) => {
         e.preventDefault();
         let docRef;
+        let collectionName = `${authentication.user.email}note`;
         if(note && note.id){
-            const upDoc = doc(db, "note", note.id);
+            const upDoc = doc(db, collectionName, note.id);
             docRef = await updateDoc(upDoc, values);
             props.onClickCloseModal();
         }else{
-            docRef = await addDoc(collection(db, "note"),values);
+            docRef = await addDoc(collection(db, collectionName),values);
             setValues({...values, noteId:docRef.id});
             props.onClickCloseModal();
         }  

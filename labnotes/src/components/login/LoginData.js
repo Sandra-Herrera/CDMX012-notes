@@ -33,8 +33,9 @@ export default function LoginData() {
                 <br></br>
                 <button className="buttonGoogle" onClick={SignInWithFirebase} >
                     <img alt="imagen Google" className="google" src={imgGoogle} />
+                    <label className="labelGoogle">Accede con Google</label>
                 </button>
-                <label className="labelGoogle">Accede con Google</label>
+                
                 {/* <br></br>
                 <input className="inputMail" placeholder="Ingresa tu correo" />
                 <br></br>

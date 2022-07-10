@@ -1,10 +1,12 @@
 
-import sandy from "../../img/sandy.jpg";
 import "./topBar.css";
+import { useContext } from "react";
+import LoginContext from "../../context/LoginContext";
 import { useNavigate } from "react-router-dom";
 
 export default function TopBar() {
     const navigate = useNavigate();
+    const {authentication} = useContext(LoginContext);
     const logOut = () => {
         navigate('/');
     }
@@ -12,8 +14,8 @@ export default function TopBar() {
         <div>
             <div className="topBar">
                 <section className="userTemplate">
-                    <img alt="imgProf" className="profilePic" src={sandy} />
-                    <label className="nameTemplate">Sandy Herrera</label>
+                <img alt="" className="profilePic" referrerPolicy="no-referrer" src={authentication.user.photoURL} />
+                    <label className="nameTemplate">{authentication.user.displayName}</label>
                 </section>
                 <button className="buttonLogOut" onClick={logOut}>
                     Cerrar sesión

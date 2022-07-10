@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/CDMX012-notes/static/css/main.1ea6720b.css",
-    "main.js": "/CDMX012-notes/static/js/main.643077fa.js",
+    "main.css": "/CDMX012-notes/static/css/main.e6e719e2.css",
+    "main.js": "/CDMX012-notes/static/js/main.94d9e4b5.js",
     "static/js/787.e2d466e0.chunk.js": "/CDMX012-notes/static/js/787.e2d466e0.chunk.js",
     "static/media/imgLogin.PNG": "/CDMX012-notes/static/media/imgLogin.3d19aeef993393ee4e00.PNG",
-    "static/media/sandy.jpg": "/CDMX012-notes/static/media/sandy.bb374f38c47fb63e8ddc.jpg",
     "static/media/imgGoogle.png": "/CDMX012-notes/static/media/imgGoogle.0b50af2fbb8c1e8ca23e.png",
     "static/media/imgCreateNotes.PNG": "/CDMX012-notes/static/media/imgCreateNotes.fac9d4e2fbf6983e88ed.PNG",
     "index.html": "/CDMX012-notes/index.html",
-    "main.1ea6720b.css.map": "/CDMX012-notes/static/css/main.1ea6720b.css.map",
-    "main.643077fa.js.map": "/CDMX012-notes/static/js/main.643077fa.js.map",
+    "main.e6e719e2.css.map": "/CDMX012-notes/static/css/main.e6e719e2.css.map",
+    "main.94d9e4b5.js.map": "/CDMX012-notes/static/js/main.94d9e4b5.js.map",
     "787.e2d466e0.chunk.js.map": "/CDMX012-notes/static/js/787.e2d466e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ea6720b.css",
-    "static/js/main.643077fa.js"
+    "static/css/main.e6e719e2.css",
+    "static/js/main.94d9e4b5.js"
   ]
 }
